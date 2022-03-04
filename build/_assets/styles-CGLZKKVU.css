@@ -1,0 +1,34 @@
+  .propertycompanyinfodefault {
+      justify-content: flex-end;
+      display: flex;
+      flex-direction: column;
+      align-items: center
+  }
+  
+  .propertycompanyinfodefault_company_slogan {
+      justify-content: flex-end;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 24px
+  }
+  
+  .propertycompanyinfodefault_namecompany {
+      font-family: Poppins;
+      font-weight: 500;
+      font-size: 1.4em;
+      color: var(--color-basic_spanishgray);
+      margin-right: 132px;
+      text-align: left
+  }
+  
+  .propertycompanyinfodefault_slogan {
+      font-family: Poppins;
+      font-weight: 500;
+      font-size: 1.0em;
+      color: var(--color-basic_lightgray);
+      margin-right: 132px;
+      text-align: left
+  }
+  
+  .propertycompanyinfodefault_icon_arrow {}

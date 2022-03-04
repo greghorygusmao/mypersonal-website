@@ -1,0 +1,26 @@
+  .header {
+      justify-content: flex-end;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      border-color: #EBEBEB;
+      border-width: 1px;
+      border-style: solid;
+      padding-left: 50px;
+      padding-right: 50px;
+      border-bottom-left-radius: 100px;
+      border-bottom-right-radius: 100px;
+      border-top-left-radius: 100px;
+      border-top-right-radius: 100px;
+      margin: auto;
+  }
+  
+  .header_title {
+      font-weight: 500;
+      font-size: 0.9em;
+      color: var(--color-basic_dimgray);
+      margin-right: 100px;
+      text-align: left;
+      text-transform: uppercase;
+      padding: 12px;
+  }

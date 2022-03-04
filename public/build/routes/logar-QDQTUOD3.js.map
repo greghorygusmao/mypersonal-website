@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/home/tharyckgusmao/Documentos/tharyck/Projetos/remix/treelodot8/app/routes/logar.jsx?browser", "../../../app/routes/logar.jsx"],
+  "sourcesContent": ["export { default } from \"/home/tharyckgusmao/Documentos/tharyck/Projetos/remix/treelodot8/app/routes/logar.jsx\";", "export default function Index() {\nreturn <span>adas</span>\n}"],
+  "mappings": ";;;;;;AAAA;;;ACAA;AAAe,iBAAiB;AAChC,SAAO,oCAAC,QAAD,MAAM;AAAA;",
+  "names": []
+}

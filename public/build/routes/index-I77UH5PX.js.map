@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/home/tharyckgusmao/Documentos/tharyck/Projetos/remix/treelodot8/app/routes/index.jsx?browser", "../../../app/routes/index.jsx"],
+  "sourcesContent": ["export { default } from \"/home/tharyckgusmao/Documentos/tharyck/Projetos/remix/treelodot8/app/routes/index.jsx\";", "import { Link, useFetcher, useLoaderData, useTransition } from \"remix\";\nimport {getListsOnBoard} from \"../services/trello\"\n\nexport let loader =async () => {\n  // return await getListsOnBoard()\n  return {boards,cards}\n};\n\nexport default function Index() {\n    let boards = useLoaderData();\n  return (\n    <div style={{\n      flexDirection:\"row\",\n      display: \"flex\"\n    }}>\n      {boards\n        .filter((e) => e.name != \"DESCARTADOS\")\n        .map((e) => {\n          return <div style={{margin:\"0px 30px\"}}>{e.name}\n            {cards.filter(ee=>ee.idList ==e)}\n          </div>;\n        })}\n    </div>\n  );\n}\n"],
+  "mappings": ";;;;;;;AAAA;;;ACAA;AAQe,iBAAiB;AAC5B,MAAI,UAAS;AACf,SACE,oCAAC,OAAD;AAAA,IAAK,OAAO;AAAA,MACV,eAAc;AAAA,MACd,SAAS;AAAA;AAAA,KAER,QACE,OAAO,CAAC,MAAM,EAAE,QAAQ,eACxB,IAAI,CAAC,MAAM;AACV,WAAO,oCAAC,OAAD;AAAA,MAAK,OAAO,EAAC,QAAO;AAAA,OAAc,EAAE,MACxC,MAAM,OAAO,QAAI,GAAG,UAAS;AAAA;AAAA;",
+  "names": []
+}

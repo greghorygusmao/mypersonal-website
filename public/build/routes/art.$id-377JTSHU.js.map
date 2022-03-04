@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/home/tharyckgusmao/Documentos/tharyck/Projetos/remix/lab1/app/routes/art.$id.jsx?browser", "../../../app/routes/art.$id.jsx"],
+  "sourcesContent": ["export { default } from \"/home/tharyckgusmao/Documentos/tharyck/Projetos/remix/lab1/app/routes/art.$id.jsx\";", "import { useFetcher, useLoaderData } from \"remix\";\nimport { getArtList } from \"~/services/art\";\n\nexport let loader = async ({params}) => {\n  return params\n};\n\nexport default function Index() {\n    const params = useLoaderData();\n  \n  return (\n    <div>\n        {params.id}\n    </div>\n  );\n}\n"],
+  "mappings": ";;;;;;;AAAA;;;ACAA;AAOe,iBAAiB;AAC5B,QAAM,SAAS;AAEjB,SACE,oCAAC,OAAD,MACK,OAAO;AAAA;",
+  "names": []
+}

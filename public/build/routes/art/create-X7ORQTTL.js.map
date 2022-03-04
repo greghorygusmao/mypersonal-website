@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/home/tharyckgusmao/Documentos/tharyck/Projetos/remix/lab1/app/routes/art/create.jsx?browser", "../../../../app/routes/art/create.jsx"],
+  "sourcesContent": ["export { default } from \"/home/tharyckgusmao/Documentos/tharyck/Projetos/remix/lab1/app/routes/art/create.jsx\";", "import { useLoaderData } from \"remix\";\n\n\n\nexport default function Create() {\n  const params = useLoaderData();\n\n  return <div>asdas</div>;\n}\n"],
+  "mappings": ";;;;;;;;;AAAA;;;ACAA;AAIe,kBAAkB;AAC/B,QAAM,SAAS;AAEf,SAAO,oCAAC,OAAD,MAAK;AAAA;",
+  "names": []
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/home/tharyckgusmao/Documentos/tharyck/Projetos/remix/lab1/app/routes/art.jsx?browser", "../../../app/routes/art.jsx"],
+  "sourcesContent": ["export { default } from \"/home/tharyckgusmao/Documentos/tharyck/Projetos/remix/lab1/app/routes/art.jsx\";", "import { Link, useFetcher, useLoaderData, useTransition } from \"remix\";\nimport { getArtList } from \"~/services/art\";\nimport { Outlet } from \"remix\";\nexport let loader = async () => {\n  return await getArtList();\n};\n\nexport default function Art() {\n  let data = useLoaderData();\n\n\n  return (\n    <div>\n      <Outlet />\n \n      <ul>\n        \n      {data.map((e, k) => {\n        return <li><Link to={\"/art/\"+e.id} key={k}> {e.title} </Link></li>\n      })}\n      </ul>\n    </div>\n  );\n}\n"],
+  "mappings": ";;;;;;;;;;;AAAA;;;ACAA;AAOe,eAAe;AAC5B,MAAI,OAAO;AAGX,SACE,oCAAC,OAAD,MACE,oCAAC,gCAAD,OAEA,oCAAC,MAAD,MAEC,KAAK,IAAI,CAAC,GAAG,MAAM;AAClB,WAAO,oCAAC,MAAD,MAAI,oCAAC,MAAD;AAAA,MAAM,IAAI,UAAQ,EAAE;AAAA,MAAI,KAAK;AAAA,OAAG,KAAE,EAAE,OAAM;AAAA;AAAA;",
+  "names": []
+}

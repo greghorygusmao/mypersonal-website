@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/home/tharyckgusmao/Documentos/tharyck/Projetos/remix/treelodot8/app/routes/index.jsx?browser", "../../../app/routes/index.jsx"],
+  "sourcesContent": ["export { default } from \"/home/tharyckgusmao/Documentos/tharyck/Projetos/remix/treelodot8/app/routes/index.jsx\";", "import { useMemo } from \"react\";\nimport { Link, useFetcher, useLoaderData, useTransition } from \"remix\";\nimport {boards,cards} from \"../services/trellotypes\"\n\nexport let loader =async () => {\n  // return await getListsOnBoard()\n   \n\n      let trashColumn = boards.find((e) => e.name != \"DESCARTADOS\");\n      let data = cards.filter((e) => e.idList != trashColumn.id);\n\n  return {data}\n};\n\nexport default function Index() {\n    let {data} = useLoaderData();\n\n  return (\n    <div style={{\n      flexDirection:\"row\",\n      display: \"flex\"\n    }}>\n      {data.map(e=>e.name)}\n    </div>\n  );\n}\n"],
+  "mappings": ";;;;;;;;;AAAA;;;ACAA;AAAA,mBAAwB;AAcT,iBAAiB;AAC5B,MAAI,EAAC,SAAQ;AAEf,SACE,oCAAC,OAAD;AAAA,IAAK,OAAO;AAAA,MACV,eAAc;AAAA,MACd,SAAS;AAAA;AAAA,KAER,KAAK,IAAI,OAAG,EAAE;AAAA;",
+  "names": []
+}

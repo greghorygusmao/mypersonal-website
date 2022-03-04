@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/home/tharyckgusmao/Documentos/tharyck/Projetos/remix/lab1/app/routes/art.jsx?browser", "../../../app/routes/art.jsx"],
+  "sourcesContent": ["export { default } from \"/home/tharyckgusmao/Documentos/tharyck/Projetos/remix/lab1/app/routes/art.jsx\";", "import { useFetcher, useLoaderData } from \"remix\";\nimport { getListAnimes } from \"~/services/art\";\n\nexport let loader = async () => {\n  return await getListAnimes();\n};\n\n\nexport default function Art() {\n    let animes = useLoaderData();\n      const animesFetcher = useFetcher();\n      console.log(animes);\n  return (\n    <div style={{ fontFamily: \"system-ui, sans-serif\", lineHeight: \"1.4\" }}>\n      {animes.map((e,k)=>{\n        return <span key={k}>{e.anime}</span>;\n      })}\n   \n    </div>\n  );\n}\n"],
+  "mappings": ";;;;;;;;AAAA;;;ACAA;AAQe,eAAe;AAC1B,MAAI,SAAS;AACX,QAAM,gBAAgB;AACtB,UAAQ,IAAI;AAChB,SACE,oCAAC,OAAD;AAAA,IAAK,OAAO,EAAE,YAAY,yBAAyB,YAAY;AAAA,KAC5D,OAAO,IAAI,CAAC,GAAE,MAAI;AACjB,WAAO,oCAAC,QAAD;AAAA,MAAM,KAAK;AAAA,OAAI,EAAE;AAAA;AAAA;",
+  "names": []
+}

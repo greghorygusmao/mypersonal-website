@@ -1,0 +1,69 @@
+  .home-title {
+      font-weight: 400;
+      font-size: 5.7em;
+      color: #333333;
+      text-align: left;
+      margin-bottom: 40px;
+  }
+  
+  .home-image {
+      filter: drop-shadow(0px 20px 30px rgba(0, 0, 0, 0.1));
+      border-radius: 10px;
+      overflow: hidden;
+      cursor: pointer;
+      width: 640px;
+      height: 486px;
+  }
+  
+  .home-image .home-image--over {
+      background: linear-gradient(360deg, rgba(255, 113, 13, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+      border-radius: 10px;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0px;
+      top: 0px;
+      z-index: 1;
+      transition: 0.3s;
+      opacity: 0;
+  }
+  
+  .home-image:hover .home-image--over {
+      opacity: 1;
+  }
+  
+  .imagecompanybuttonview {
+      justify-content: center;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 14px;
+      padding-bottom: 14px;
+      padding-left: 20px;
+      padding-right: 20px;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px;
+      box-shadow: 0px 11px 14px rgba(0, 0, 0, 0.1);
+  }
+  
+  .imagecompanybuttonview_label_icon {
+      justify-content: flex-end;
+      display: flex;
+      flex-direction: row;
+      align-items: center
+  }
+  
+  .imagecompanybuttonview_icon_eyeshow {
+      margin-right: 10px
+  }
+  
+  .imagecompanybuttonview_conheaoprojeto {
+      font-family: Poppins;
+      font-weight: 500;
+      font-size: 1.3em;
+      color: var(--color-basic_jet);
+      text-align: left
+  }

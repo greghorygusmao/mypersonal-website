@@ -1,0 +1,76 @@
+          .info {
+              justify-content: flex-end;
+              display: flex;
+              flex-direction: column;
+              margin-bottom: 30px
+          }
+          
+          .info_subtitle {
+              justify-content: flex-start;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              margin-bottom: 20px
+          }
+          
+          .info_subtitlelabe {
+              font-weight: 800;
+              font-size: 1.1em;
+              color: var(--color-main_maximumbluegreen);
+              text-align: left
+          }
+          
+          .info_name {
+              font-weight: Light;
+              font-size: 7.1em;
+              color: var(--color-basic_jet);
+              text-align: left
+          }
+          
+          .line {
+              width: 18px;
+              height: 2px;
+              background-color: var(--color-main_maximumbluegreen);
+              display: block;
+              margin-right: 5px;
+          }
+          
+          .info_description {
+              font-weight: 300;
+              font-size: 2.3em;
+              color: var(--color-basic_dimgray);
+              margin-bottom: 80px;
+              text-align: left
+          }
+          
+          .info_description bold {
+              font-weight: 600;
+          }
+          
+          .label {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              margin-bottom: 40px
+          }
+          
+          .label_labeltitle {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              margin-top: 30px;
+          }
+          
+          .label_conheameutrabalho {
+              font-weight: 800;
+              font-size: 1.9em;
+              color: var(--color-basic_jet);
+              text-align: left;
+              text-transform: uppercase;
+          }
+          
+          .label_labeltitle i {
+              color: #D6D6D6;
+              margin-right: 14px;
+              font-size: 1.5em;
+          }

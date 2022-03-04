@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/home/tharyckgusmao/Documentos/tharyck/Projetos/remix/treelodot8/app/routes/logar.jsx?browser", "../../../app/routes/logar.jsx", "../../../app/components/AuthForm/AuthForm.jsx"],
+  "sourcesContent": ["export { default } from \"/home/tharyckgusmao/Documentos/tharyck/Projetos/remix/treelodot8/app/routes/logar.jsx\";", "import { AuthForm } from \"../components/AuthForm/AuthForm\";\nimport { db } from \"../utils/utils\";\n\nexport let loader = async () => {\n  console.log(db);\n  let data = await db.auths.findMany();\n  console.log(data);\n  return {};\n};\n\nexport default function Index() {\n  return <AuthForm />;\n}\n", "import s from \"./styles.css\";\n\nexport const links = [{ rel: \"stylesheet\", href: s }];\n\nexport const AuthForm=(props)=>{\n    return <span>AuthForm</span>    \n}"],
+  "mappings": ";;;;;;AAAA;;;ACAA;;;ACAA;AAIO,IAAM,WAAS,CAAC,UAAQ;AAC3B,SAAO,oCAAC,QAAD,MAAM;AAAA;;;ADKF,iBAAiB;AAC9B,SAAO,oCAAC,UAAD;AAAA;",
+  "names": []
+}

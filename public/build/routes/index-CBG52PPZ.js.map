@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/home/tharyckgusmao/Documentos/tharyck/Projetos/remix/treelodot8/app/routes/index.jsx?browser", "../../../app/routes/index.jsx"],
+  "sourcesContent": ["export { default } from \"/home/tharyckgusmao/Documentos/tharyck/Projetos/remix/treelodot8/app/routes/index.jsx\";", "import { Link, useFetcher, useLoaderData, useTransition } from \"remix\";\nimport { getLinksForMatches } from \"@remix-run/react/links\";\nexport let loader =async () => {\n  return await getListsOnBoard()\n};\n\nexport default function Index() {\n    let products = useLoaderData();\n    console.log(products);\n  return (\n    <div style={{ fontFamily: \"system-ui, sans-serif\", lineHeight: \"1.4\" }}>\n      <Link to=\"/art\">Art</Link>\n    </div>\n  );\n}\n"],
+  "mappings": ";;;;;;;;AAAA;;;ACAA;AAMe,iBAAiB;AAC5B,MAAI,WAAW;AACf,UAAQ,IAAI;AACd,SACE,oCAAC,OAAD;AAAA,IAAK,OAAO,EAAE,YAAY,yBAAyB,YAAY;AAAA,KAC7D,oCAAC,MAAD;AAAA,IAAM,IAAG;AAAA,KAAO;AAAA;",
+  "names": []
+}

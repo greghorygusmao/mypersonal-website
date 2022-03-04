@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/home/tharyckgusmao/Documentos/tharyck/Projetos/remix/treelodot8/app/routes/index.jsx?browser", "../../../app/routes/index.jsx"],
+  "sourcesContent": ["export { default } from \"/home/tharyckgusmao/Documentos/tharyck/Projetos/remix/treelodot8/app/routes/index.jsx\";", "import { useMemo } from \"react\";\nimport { Link, useFetcher, useLoaderData, useTransition } from \"remix\";\nimport {boards,cards} from \"../services/trellotypes\"\n\nexport let loader =async () => {\n  // return await getListsOnBoard()\n  return {boards,cards}\n};\n\nexport default function Index() {\n    let {boards,cards} = useLoaderData();\n \n\n    let data = useMemo(() => {\n      let trashColumn = boards.find((e) => e.name != \"DESCARTADOS\");\n      let cardsTmp = cards.filter(\n        (e) =>\n          e.labels.indexOf((ee) => ee.name == \"INOVA\u00C7\u00C3O\") > -1 &&\n          e.idList != trashColumn.id\n      );\n\n      \n        return cardsTmp;\n    }, [])\n  return (\n    <div style={{\n      flexDirection:\"row\",\n      display: \"flex\"\n    }}>\n      {data.map(e=>e.name)}\n    </div>\n  );\n}\n"],
+  "mappings": ";;;;;;;;;AAAA;;;ACAA;AAAA,mBAAwB;AAST,iBAAiB;AAC5B,MAAI,EAAC,QAAO,UAAS;AAGrB,MAAI,OAAO,0BAAQ,MAAM;AACvB,QAAI,cAAc,OAAO,KAAK,CAAC,MAAM,EAAE,QAAQ;AAC/C,QAAI,WAAW,MAAM,OACnB,CAAC,MACC,EAAE,OAAO,QAAQ,CAAC,OAAO,GAAG,QAAQ,oBAAc,MAClD,EAAE,UAAU,YAAY;AAI1B,WAAO;AAAA,KACR;AACL,SACE,oCAAC,OAAD;AAAA,IAAK,OAAO;AAAA,MACV,eAAc;AAAA,MACd,SAAS;AAAA;AAAA,KAER,KAAK,IAAI,OAAG,EAAE;AAAA;",
+  "names": []
+}

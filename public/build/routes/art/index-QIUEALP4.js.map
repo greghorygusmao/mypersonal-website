@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/home/tharyckgusmao/Documentos/tharyck/Projetos/remix/lab1/app/routes/art/index.jsx?browser", "../../../../app/routes/art/index.jsx"],
+  "sourcesContent": ["export { default } from \"/home/tharyckgusmao/Documentos/tharyck/Projetos/remix/lab1/app/routes/art/index.jsx\";", "\nexport default function ArtIndex() {\n  return (\n    <div>\n        INdex\n    </div>\n  );\n}\n"],
+  "mappings": ";;;;;;AAAA;;;ACAA;AACe,oBAAoB;AACjC,SACE,oCAAC,OAAD,MAAK;AAAA;",
+  "names": []
+}

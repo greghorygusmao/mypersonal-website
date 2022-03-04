@@ -1,0 +1,39 @@
+import {
+  LeftNavbar,
+  links
+} from "/build/_shared/chunk-AX3BTWEQ.js";
+import {
+  links as links2
+} from "/build/_shared/chunk-FXGHJ45P.js";
+import "/build/_shared/chunk-SHL4HTZZ.js";
+import "/build/_shared/chunk-CK2CYCJL.js";
+import {
+  React,
+  __toModule,
+  init_react,
+  require_main
+} from "/build/_shared/chunk-S36ARFWZ.js";
+
+// browser-route-module:/home/tharyckgusmao/Documentos/tharyck/Projetos/remix/gtproject/app/routes/cms.jsx?browser
+init_react();
+
+// app/routes/cms.jsx
+init_react();
+var import_react_router = __toModule(require_main());
+function links3() {
+  return [...links, ...links2];
+}
+function Index() {
+  return /* @__PURE__ */ React.createElement("div", {
+    style: {
+      flexDirection: "row",
+      display: "flex",
+      height: "100%"
+    }
+  }, /* @__PURE__ */ React.createElement(LeftNavbar, null), /* @__PURE__ */ React.createElement(import_react_router.Outlet, null));
+}
+export {
+  Index as default,
+  links3 as links
+};
+//# sourceMappingURL=/build/routes/cms-NQYSB6UM.js.map

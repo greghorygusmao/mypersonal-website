@@ -1,0 +1,35 @@
+  .header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 50px
+  }
+  
+  .header_info {
+      justify-content: center;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 18px
+  }
+  
+  .header_name_job {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start
+  }
+  
+  .header_greghorymetzker {
+      font-weight: 300;
+      font-size: 1.4em;
+      color: var(--color-basic_jet);
+      margin-bottom: 8px;
+      text-align: left
+  }
+  
+  .header_productdesignerproductmanager {
+      font-weight: 800;
+      font-size: 0.7em;
+      color: var(--color-main_maximumbluegreen);
+      text-align: left
+  }

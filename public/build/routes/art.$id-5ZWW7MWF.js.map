@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/home/tharyckgusmao/Documentos/tharyck/Projetos/remix/lab1/app/routes/art.$id.jsx?browser", "../../../app/routes/art.$id.jsx"],
+  "sourcesContent": ["export { default } from \"/home/tharyckgusmao/Documentos/tharyck/Projetos/remix/lab1/app/routes/art.$id.jsx\";", "import { Link, useLoaderData } from \"remix\";\nimport { getArt } from \"~/services/art\";\n\nexport let loader = async ({params}) => {\n  \n  return {\n    params,\n    data: await getArt(params.id)\n\n  \n  }\n};\n\nexport default function Index() {\n    const {params,data} = useLoaderData();\n  return (\n    <div\n      style={{\n        flexDirection: \"column\",\n        display: \"flex\",\n      }}\n    >\n      <Link to=\"/art\">Voltar</Link>\n      <Prompt\n        when={true}\n        message={(location) =>\n          `Are you sure you want to go to ${location.pathname}`\n        }\n      />\n      <img style={{ width: \"120px\" }} src={data?.thumbnail?.lqip}></img>\n      {params.id}\n      <span>{data?.title}</span>\n    </div>\n  );\n}\n"],
+  "mappings": ";;;;;;;;;;AAAA;;;ACAA;AAae,iBAAiB;AAC5B,QAAM,EAAC,QAAO,SAAQ;AACxB,SACE,oCAAC,OAAD;AAAA,IACE,OAAO;AAAA,MACL,eAAe;AAAA,MACf,SAAS;AAAA;AAAA,KAGX,oCAAC,MAAD;AAAA,IAAM,IAAG;AAAA,KAAO,WAChB,oCAAC,QAAD;AAAA,IACE,MAAM;AAAA,IACN,SAAS,CAAC,aACR,kCAAkC,SAAS;AAAA,MAG/C,oCAAC,OAAD;AAAA,IAAK,OAAO,EAAE,OAAO;AAAA,IAAW,KAAK,MAAM,WAAW;AAAA,MACrD,OAAO,IACR,oCAAC,QAAD,MAAO,MAAM;AAAA;",
+  "names": []
+}

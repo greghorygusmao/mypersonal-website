@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/home/tharyckgusmao/Documentos/tharyck/Projetos/remix/lab1/app/routes/art.$id.jsx?browser", "../../../app/routes/art.$id.jsx"],
+  "sourcesContent": ["export { default } from \"/home/tharyckgusmao/Documentos/tharyck/Projetos/remix/lab1/app/routes/art.$id.jsx\";", "import { Link, useLoaderData } from \"remix\";\nimport { getArt } from \"~/services/art\";\n\nexport let loader = async ({params}) => {\n  \n  return {\n    params,\n    data: await getArt(params.id)\n\n  \n  }\n};\n\nexport default function Index() {\n    const {params,data} = useLoaderData();\n  return (\n    <div>\n      <Link to=\"/art\" >Voltar</Link >\n      {params.id}\n\n      <img src={data?.thumbnail.lqip}></img>\n      <span>{data.name}</span>\n    </div>\n  );\n}\n"],
+  "mappings": ";;;;;;;;;;AAAA;;;ACAA;AAae,iBAAiB;AAC5B,QAAM,EAAC,QAAO,SAAQ;AACxB,SACE,oCAAC,OAAD,MACE,oCAAC,MAAD;AAAA,IAAM,IAAG;AAAA,KAAQ,WAChB,OAAO,IAER,oCAAC,OAAD;AAAA,IAAK,KAAK,MAAM,UAAU;AAAA,MAC1B,oCAAC,QAAD,MAAO,KAAK;AAAA;",
+  "names": []
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/home/tharyckgusmao/Documentos/tharyck/Projetos/remix/gtproject/app/routes/cms/blogs.jsx?browser", "../../../../app/routes/cms/blogs.jsx"],
+  "sourcesContent": ["export { default } from \"/home/tharyckgusmao/Documentos/tharyck/Projetos/remix/gtproject/app/routes/cms/blogs.jsx\";", "import { Outlet } from \"react-router\"\nimport { getArticles } from \".././../services/blogs\"\n\nexport const loader = async () => {\n  let articles = await getArticles()\n  return articles\n}\n\nexport default function Index() {\n  return (\n    <div\n      style={{\n        flexDirection: \"row\",\n        display: \"flex\",\n        height: \"100%\",\n      }}\n    >\n      blog\n    </div>\n  )\n}\n"],
+  "mappings": ";;;;;;;AAAA;;;ACAA;AAQe,iBAAiB;AAC9B,SACE,oCAAC,OAAD;AAAA,IACE,OAAO;AAAA,MACL,eAAe;AAAA,MACf,SAAS;AAAA,MACT,QAAQ;AAAA;AAAA,KAEX;AAAA;",
+  "names": []
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/home/tharyckgusmao/Documentos/tharyck/Projetos/remix/gtproject/app/routes/index.jsx?browser", "../../../app/routes/index.jsx"],
+  "sourcesContent": ["export { default } from \"/home/tharyckgusmao/Documentos/tharyck/Projetos/remix/gtproject/app/routes/index.jsx\";", "import Box from \"../components/BaseKit/Box/Box\"\nexport let loader = async ({ request }) => {\n  console.log(authenticator)\n  await authenticator.isAuthenticated(request, {\n    failureRedirect: \"/\",\n  })\n  return null\n}\nexport default function Index() {\n  return (\n    <Box\n      flex={1}\n      style={{\n        height: \"100%\",\n      }}\n    >\n      asda\n    </Box>\n  )\n}\n"],
+  "mappings": ";;;;;;;;;;AAAA;;;ACAA;AAQe,iBAAiB;AAC9B,SACE,oCAAC,aAAD;AAAA,IACE,MAAM;AAAA,IACN,OAAO;AAAA,MACL,QAAQ;AAAA;AAAA,KAEX;AAAA;",
+  "names": []
+}

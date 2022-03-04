@@ -1,0 +1,7 @@
+.title {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 1.7em;
+    color: var(--color-base_black);
+    text-align: left
+}
