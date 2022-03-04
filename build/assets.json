@@ -1,20 +1,20 @@
 {
-  "version": "9f334891",
+  "version": "5cbd0f23",
   "entry": {
-    "module": "/build/entry.client-YDASMFFY.js",
+    "module": "/build/entry.client-FEPE6SQ6.js",
     "imports": [
-      "/build/_shared/chunk-DGNGNE3C.js",
-      "/build/_shared/chunk-P76ABBKC.js",
-      "/build/_shared/chunk-AKSB5QXU.js"
+      "/build/_shared/chunk-OQ4VQ54M.js",
+      "/build/_shared/chunk-G4AI7PX3.js",
+      "/build/_shared/chunk-E7VMOUYL.js"
     ]
   },
   "routes": {
     "root": {
       "id": "root",
       "path": "",
-      "module": "/build/root-B5O5LGDP.js",
+      "module": "/build/root-FCRVZEHO.js",
       "imports": [
-        "/build/_shared/chunk-RQWRCO3Y.js"
+        "/build/_shared/chunk-YA5SDVA5.js"
       ],
       "hasAction": false,
       "hasLoader": true,
@@ -25,12 +25,12 @@
       "id": "routes/index",
       "parentId": "root",
       "index": true,
-      "module": "/build/routes/index-BOPSDL2B.js",
+      "module": "/build/routes/index-AEO6AQCE.js",
       "hasAction": false,
       "hasLoader": true,
       "hasCatchBoundary": false,
       "hasErrorBoundary": false
     }
   },
-  "url": "/build/manifest-9F334891.js"
+  "url": "/build/manifest-5CBD0F23.js"
 }

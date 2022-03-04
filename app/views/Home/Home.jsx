@@ -1,11 +1,10 @@
-import { Link } from "remix";
+import Greg from "~/assets/images/greg2.png";
 import BaseImage from "~/components/BaseKit/BaseImage/BaseImage";
 import BaseText from "~/components/BaseKit/BaseText/BaseText";
 import Box from "~/components/BaseKit/Box/Box";
 import Divider from "~/components/BaseKit/Divider/Divider";
 import Icon from "~/components/BaseKit/Icon/Icon";
 import s from "./styles.css";
-import Greg from "~/assets/images/greg2.png";
 
 export const links = [{ rel: "stylesheet", href: s }];
 

@@ -15,10 +15,7 @@ export const Header = (props) => {
       data-scroll
     >
       <Box className={"header"} flex="1" jCenter aCenter flexDirection="row">
-        <a
-          href="https://www.linkedin.com/company/gtproducts/about/"
-          target="_blank"
-        >
+        <a href="https://medium.com/@gregmetzker" target="_blank">
           <BaseText
             className={"header_title"}
             type="span"
@@ -26,10 +23,7 @@ export const Header = (props) => {
           ></BaseText>
         </a>
 
-        <a
-          href="https://www.linkedin.com/company/gtproducts/about/"
-          target="_blank"
-        >
+        <a href="https://dribbble.com/greghorymetzker" target="_blank">
           <BaseText
             className={"header_title"}
             type="span"
@@ -37,10 +31,7 @@ export const Header = (props) => {
           ></BaseText>
         </a>
 
-        <a
-          href="https://www.linkedin.com/company/gtproducts/about/"
-          target="_blank"
-        >
+        <a href="https://www.linkedin.com/in/greghorymetzker/" target="_blank">
           <BaseText
             className={"header_title"}
             type="span"
@@ -49,7 +40,7 @@ export const Header = (props) => {
         </a>
 
         <a
-          href="https://www.linkedin.com/company/gtproducts/about/"
+          href="https://api.whatsapp.com/send?phone=5531982325284&text=Ol%C3%A1"
           target="_blank"
         >
           <BaseText

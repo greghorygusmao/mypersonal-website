@@ -44,7 +44,7 @@ export const Footer = ({ relative }) => {
             </a>
           </Box>
           <Box className={"buttonlinksdefault"} flex="1" jCenter aCenter row>
-            <a href="https://dribbble.com/greghorygusmao" target="_blank">
+            <a href="https://dribbble.com/greghorymetzker" target="_blank">
               <Icon
                 name="icon-icon_dribbble"
                 className={"buttonlinksdefault_icon_arrow"}
@@ -52,7 +52,7 @@ export const Footer = ({ relative }) => {
             </a>
           </Box>
           <Box className={"buttonlinksdefault"} flex="1" jCenter aCenter row>
-            <a href="https://github.com/greghorygusmao" target="_blank">
+            <a href="https://github.com/greghorymetzker" target="_blank">
               <Icon
                 name="icon-icon_github"
                 className={"buttonlinksdefault_icon_arrow"}
