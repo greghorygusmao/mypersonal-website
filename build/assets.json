@@ -1,5 +1,5 @@
 {
-  "version": "5cbd0f23",
+  "version": "0251d4a2",
   "entry": {
     "module": "/build/entry.client-FEPE6SQ6.js",
     "imports": [
@@ -25,12 +25,12 @@
       "id": "routes/index",
       "parentId": "root",
       "index": true,
-      "module": "/build/routes/index-AEO6AQCE.js",
+      "module": "/build/routes/index-MRE2J4LV.js",
       "hasAction": false,
       "hasLoader": true,
       "hasCatchBoundary": false,
       "hasErrorBoundary": false
     }
   },
-  "url": "/build/manifest-5CBD0F23.js"
+  "url": "/build/manifest-0251D4A2.js"
 }

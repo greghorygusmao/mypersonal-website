@@ -120,7 +120,7 @@ export const Home = ({ title, style }) => {
                 </Box>
               </a>
               <a
-                href="https://dribbble.com/greghorygusmao"
+                href="https://dribbble.com/greghorymetzker"
                 target="_blank"
                 style={{
                   textDecoration: "none",
