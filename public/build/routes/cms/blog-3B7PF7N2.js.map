@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["browser-route-module:/home/tharyckgusmao/Documentos/tharyck/Projetos/remix/gtproject/app/routes/cms/blog.jsx?browser", "../../../../app/routes/cms/blog.jsx"],
-  "sourcesContent": ["export { default } from \"/home/tharyckgusmao/Documentos/tharyck/Projetos/remix/gtproject/app/routes/cms/blog.jsx\";", "import { Outlet } from \"react-router\"\nimport { Link, useLoaderData } from \"remix\"\nimport { getArticles } from \"../../services/blogs\"\nimport Box from \"~/components/BaseKit/Box\"\n\nexport const loader = async () => {\n  let articles = await getArticles()\n  return articles\n}\n\nexport default function Index() {\n  const articles = useLoaderData()\n  return (\n    <Box column>\n      blog\n      <Box column>\n        {articles?.map((e) => {\n          return (\n            <Link key={e.id} to={`/${e.id}`}>\n              {e.title}\n            </Link>\n          )\n        })}\n      </Box>\n    </Box>\n  )\n}\n"],
-  "mappings": ";;;;;;;;;;;;;;AAAA;;;ACAA;AAUe,iBAAiB;AAC9B,QAAM,WAAW;AACjB,SACE,oCAAC,aAAD;AAAA,IAAK,QAAM;AAAA,KAAC,QAEV,oCAAC,aAAD;AAAA,IAAK,QAAM;AAAA,KACR,UAAU,IAAI,CAAC,MAAM;AACpB,WACE,oCAAC,MAAD;AAAA,MAAM,KAAK,EAAE;AAAA,MAAI,IAAI,IAAI,EAAE;AAAA,OACxB,EAAE;AAAA;AAAA;",
-  "names": []
-}

@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["browser-route-module:/home/tharyckgusmao/Documentos/tharyck/Projetos/remix/lab1/app/routes/art.$id.jsx?browser", "../../../app/routes/art.$id.jsx"],
-  "sourcesContent": ["export { default } from \"/home/tharyckgusmao/Documentos/tharyck/Projetos/remix/lab1/app/routes/art.$id.jsx\";", "import { Link, useLoaderData } from \"remix\";\nimport { getArt } from \"~/services/art\";\n\nexport let loader = async ({params}) => {\n  \n  return {\n    params,\n    data: await getArt(params.id)\n\n  \n  }\n};\n\nexport default function Index() {\n    const {params,data} = useLoaderData();\n  return (\n    <div style={{\n      flexDirection:\"column\",\n      display: \"flex\"\n    }}>\n      <Link to=\"/art\" >Voltar</Link >\n\n      <img style={{width:\"120px\"}} src={data?.thumbnail?.lqip}></img>\n      {params.id}\n      <span>{data?.title}</span>\n    </div>\n  );\n}\n"],
-  "mappings": ";;;;;;;;;;AAAA;;;ACAA;AAae,iBAAiB;AAC5B,QAAM,EAAC,QAAO,SAAQ;AACxB,SACE,oCAAC,OAAD;AAAA,IAAK,OAAO;AAAA,MACV,eAAc;AAAA,MACd,SAAS;AAAA;AAAA,KAET,oCAAC,MAAD;AAAA,IAAM,IAAG;AAAA,KAAQ,WAEjB,oCAAC,OAAD;AAAA,IAAK,OAAO,EAAC,OAAM;AAAA,IAAU,KAAK,MAAM,WAAW;AAAA,MAClD,OAAO,IACR,oCAAC,QAAD,MAAO,MAAM;AAAA;",
-  "names": []
-}

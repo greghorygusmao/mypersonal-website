@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["browser-route-module:/home/tharyckgusmao/Documentos/tharyck/Projetos/remix/gtproject/app/routes/cms/blog/$blogId/$blogId.jsx?browser", "../../../../../../app/routes/cms/blog/$blogId/$blogId.jsx"],
-  "sourcesContent": ["export { default } from \"/home/tharyckgusmao/Documentos/tharyck/Projetos/remix/gtproject/app/routes/cms/blog/$blogId/$blogId.jsx\";", "export default function Index() {\n  return (\n    <div\n      style={{\n        flexDirection: \"row\",\n        display: \"flex\",\n        height: \"100%\",\n      }}\n    >\n      id\n    </div>\n  )\n}\n"],
-  "mappings": ";;;;;;AAAA;;;ACAA;AAAe,iBAAiB;AAC9B,SACE,oCAAC,OAAD;AAAA,IACE,OAAO;AAAA,MACL,eAAe;AAAA,MACf,SAAS;AAAA,MACT,QAAQ;AAAA;AAAA,KAEX;AAAA;",
-  "names": []
-}

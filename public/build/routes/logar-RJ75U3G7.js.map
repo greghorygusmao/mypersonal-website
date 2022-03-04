@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["browser-route-module:/home/tharyckgusmao/Documentos/tharyck/Projetos/remix/treelodot8/app/routes/logar.jsx?browser"],
-  "sourcesContent": ["export * from \"/home/tharyckgusmao/Documentos/tharyck/Projetos/remix/treelodot8/app/routes/logar.jsx\";"],
-  "mappings": ";;;;;AAAA;",
-  "names": []
-}

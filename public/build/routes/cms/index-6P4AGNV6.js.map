@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["browser-route-module:/home/tharyckgusmao/Documentos/tharyck/Projetos/remix/gtproject/app/routes/cms/index.jsx?browser"],
-  "sourcesContent": ["export * from \"/home/tharyckgusmao/Documentos/tharyck/Projetos/remix/gtproject/app/routes/cms/index.jsx\";"],
-  "mappings": ";;;;;AAAA;",
-  "names": []
-}

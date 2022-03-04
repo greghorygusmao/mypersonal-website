@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["browser-route-module:/home/tharyckgusmao/Documentos/tharyck/Projetos/remix/treelodot8/app/routes/logar.jsx?browser", "../../../app/routes/logar.jsx"],
-  "sourcesContent": ["export { default } from \"/home/tharyckgusmao/Documentos/tharyck/Projetos/remix/treelodot8/app/routes/logar.jsx\";", "import {db} from \"../utils/utils\"\n\nexport let loader = async () => {\n    console.log(db);\n    let data = await db.auths.findMany();\n    console.log(data);\nreturn {}\n}\n\nexport default function Index() {\nreturn <span>adas</span>\n}"],
-  "mappings": ";;;;;;AAAA;;;ACAA;AASe,iBAAiB;AAChC,SAAO,oCAAC,QAAD,MAAM;AAAA;",
-  "names": []
-}

@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["browser-route-module:/home/tharyckgusmao/Documentos/tharyck/Projetos/remix/gtproject/app/routes/api/articles.jsx?browser", "../../../../app/routes/api/articles.jsx"],
-  "sourcesContent": ["export * from \"/home/tharyckgusmao/Documentos/tharyck/Projetos/remix/gtproject/app/routes/api/articles.jsx\";", "import { json } from \"@remix-run/server-runtime\"\nimport { authenticator } from \"~/services/auth\"\n\nexport let loader = async ({ request, params }) => {\n  let isAuth = await authenticator.isAuthenticated(request)\n  if (!isAuth) {\n    return json(\"not authorized\", { status: 401 })\n  }\n\n  let data = await getArticles()\n  return json(data, { status: 200 })\n}\n"],
-  "mappings": ";;;;;;;;;;;;AAAA;;;ACAA;AAAA,4BAAqB;AAGd,IAAI,SAAS,OAAO,EAAE,SAAS,aAAa;AACjD,MAAI,SAAS,MAAM,cAAc,gBAAgB;AACjD,MAAI,CAAC,QAAQ;AACX,WAAO,gCAAK,kBAAkB,EAAE,QAAQ;AAAA;AAG1C,MAAI,OAAO,MAAM;AACjB,SAAO,gCAAK,MAAM,EAAE,QAAQ;AAAA;",
-  "names": []
-}

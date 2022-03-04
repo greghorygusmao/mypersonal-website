@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../app/components/contexts/theme.jsx"],
-  "sourcesContent": ["import { createContext, useContext, useState } from \"react\"\n\nconst ThemeContext = createContext(undefined)\n\nfunction ThemeProvider({ children, defaulTheme }) {\n  const [theme, setTheme] = useState(defaulTheme)\n\n  return <ThemeContext.Provider value={[theme, setTheme]}>{children}</ThemeContext.Provider>\n}\n\nfunction useTheme() {\n  const context = useContext(ThemeContext)\n  if (context === undefined) {\n    throw new Error(\"useTheme must be used within a ThemeProvider\")\n  }\n  return context\n}\n\nexport { ThemeProvider, useTheme }\n"],
-  "mappings": ";;;;;;;;AAAA;AAAA,mBAAoD;AAEpD,IAAM,eAAe,gCAAc;AAEnC,uBAAuB,EAAE,UAAU,eAAe;AAChD,QAAM,CAAC,OAAO,YAAY,2BAAS;AAEnC,SAAO,oCAAC,aAAa,UAAd;AAAA,IAAuB,OAAO,CAAC,OAAO;AAAA,KAAY;AAAA;AAG3D,oBAAoB;AAClB,QAAM,UAAU,6BAAW;AAC3B,MAAI,YAAY,QAAW;AACzB,UAAM,IAAI,MAAM;AAAA;AAElB,SAAO;AAAA;",
-  "names": []
-}
