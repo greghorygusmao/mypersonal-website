@@ -17,8 +17,8 @@ export function links(data) {
 }
 
 export const loader = async ({ request }) => {
-  if (request.headers["x-forwarded-proto"] !== "https") {
-    redirect("https://" + request.headers.host);
+  if (request.url.indexOf("http://") > -1) {
+    return redirect("https://" + request.headers.get("host"));
   }
 
   const mobile = isMobile(request.headers.get("user-agent")).any;
