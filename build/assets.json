@@ -1,5 +1,5 @@
 {
-  "version": "0251d4a2",
+  "version": "81c0ba0b",
   "entry": {
     "module": "/build/entry.client-FEPE6SQ6.js",
     "imports": [
@@ -25,12 +25,12 @@
       "id": "routes/index",
       "parentId": "root",
       "index": true,
-      "module": "/build/routes/index-MRE2J4LV.js",
+      "module": "/build/routes/index-GYZZZRJJ.js",
       "hasAction": false,
       "hasLoader": true,
       "hasCatchBoundary": false,
       "hasErrorBoundary": false
     }
   },
-  "url": "/build/manifest-0251D4A2.js"
+  "url": "/build/manifest-81C0BA0B.js"
 }

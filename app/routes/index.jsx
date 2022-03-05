@@ -4,7 +4,7 @@ import { Home } from "~/views/Home/Home";
 import { Home as HomeMobile } from "~/views/Home/HomeMobile";
 import Footer from "~/components/Footer/Footer";
 import isMobile from "ismobilejs";
-import { useLoaderData } from "remix";
+import { redirect, useLoaderData } from "remix";
 
 export function links(data) {
   return [
@@ -17,6 +17,10 @@ export function links(data) {
 }
 
 export const loader = async ({ request }) => {
+  if (request.headers["x-forwarded-proto"] !== "https") {
+    redirect("https://" + request.headers.host);
+  }
+
   const mobile = isMobile(request.headers.get("user-agent")).any;
 
   return { mobile };
